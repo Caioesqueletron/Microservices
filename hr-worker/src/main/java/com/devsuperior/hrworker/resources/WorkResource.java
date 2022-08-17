@@ -29,6 +29,7 @@ public class WorkResource {
     @GetMapping
     public ResponseEntity<List<Worker>> findAll(){
         List<Worker> list = repository.findAll();
+
         return  ResponseEntity.ok().body(list);
     }
 
